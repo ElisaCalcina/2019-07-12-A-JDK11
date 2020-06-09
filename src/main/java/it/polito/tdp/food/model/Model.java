@@ -45,6 +45,14 @@ public class Model {
 		return this.cibi ;
 	}
 	
+	public int nVertici() {
+		return this.graph.vertexSet().size();
+	}
+	
+	public int nArchi() {
+		return this.graph.edgeSet().size();
+	}
+	
 	public List<FoodCalories> elencoCibiConnessi(Food f) {
 		
 		List<FoodCalories> result = new ArrayList<>() ;

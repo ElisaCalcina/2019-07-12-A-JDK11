@@ -64,6 +64,8 @@ public class FoodController {
 			txtResult.appendText("ERRORE: Devi inserire un numero\n");
 			return;
 		}
+		
+		txtResult.appendText("Grafo creato con "+ this.model.nVertici()+" vertici e "+ this.model.nArchi()+ "archi");
 	}
 
 	@FXML
